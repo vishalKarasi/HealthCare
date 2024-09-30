@@ -13,7 +13,7 @@ function Footer() {
         </nav>
         <article>
           <Link>Terms | Conditions</Link>
-          <i>© 2024 Your Company Name. All rights reserved</i>
+          <i>© 2024 Healthcare Service Limited All rights reserved</i>
         </article>
       </div>
       <form>
