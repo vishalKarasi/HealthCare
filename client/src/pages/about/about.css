@@ -1,0 +1,29 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4em;
+  justify-items: center;
+  align-items: start;
+}
+
+.about h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.about section {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.about section h3 span {
+  font: var(--font-link);
+  color: var(--clr-secondary);
+  font-weight: 700;
+}
+
+.about section img {
+  height: 300px;
+  border-radius: 1em;
+}

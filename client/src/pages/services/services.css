@@ -1,0 +1,77 @@
+.services {
+  position: relative;
+}
+
+.services .wrapper {
+  justify-content: space-between;
+  padding-block: 2em;
+}
+
+.searchBar {
+  flex-direction: row;
+  border-radius: 0.5em;
+  width: 45ch;
+  padding-left: 0.5em;
+  padding-block: 0.5em;
+
+  input {
+    background-color: transparent;
+    flex-grow: 1;
+    padding-right: 0;
+  }
+
+  button {
+    padding-right: 1em;
+
+    svg {
+      color: var(--clr-secondary);
+    }
+  }
+}
+
+.addBtn {
+  svg {
+    color: var(--clr-bg);
+    transition: color 0.4 ease-in-out;
+    font-size: 0.85em;
+  }
+}
+
+.addBtn:hover > svg {
+  color: var(--clr-secondary);
+}
+
+.serviceList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+.services > form {
+  position: absolute;
+  top: 5em;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10em var(--clr-font);
+  z-index: 99;
+}
+
+.formHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: var(--font-link);
+  color: var(--clr-secondary);
+
+  svg {
+    color: white;
+    background-color: var(--clr-invalid);
+    border-radius: 0.25em;
+    scale: 0.75;
+  }
+
+  svg:hover {
+    scale: 0.9;
+  }
+}

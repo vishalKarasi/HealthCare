@@ -1,0 +1,38 @@
+.testimonialCard {
+  padding: 2em;
+  border-radius: 2em;
+  box-shadow: 0 0 0.5em 0.5em var(--clr-box);
+}
+
+.testimonialCard .info {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 0.5em;
+}
+
+.info img {
+  width: 5em;
+  border-radius: 100%;
+}
+
+.info .name {
+  font: var(--font-link);
+  color: var(--clr-primary);
+}
+
+.testimonial {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 10% 80% 10%;
+  column-gap: 1em;
+  font-size: 0.9em;
+}
+
+.testimonial svg {
+  color: var(--clr-primary);
+}
+
+.testimonial svg:last-child {
+  align-self: end;
+}

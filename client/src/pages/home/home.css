@@ -1,0 +1,22 @@
+.homeContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.homeContent img {
+  width: 400px;
+}
+
+.homeText {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 2em;
+}
+
+.homeContent i {
+  font-size: 1.25em;
+  font-weight: 700;
+}

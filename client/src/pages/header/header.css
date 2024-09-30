@@ -1,0 +1,45 @@
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 8dvw;
+  padding-block: 0.75em;
+  background-color: var(--clr-box);
+  z-index: 999;
+  box-shadow: 0em 0em 1em var(--clr-font);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.logo img {
+  width: 4em;
+}
+
+.logo span {
+  font-size: 2.2em;
+  font-family: ubuntu;
+  color: var(--clr-primary);
+  font-weight: 900;
+}
+
+header .options {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+.options button {
+  box-shadow: 0 0 0.2em var(--clr-primary);
+  border-radius: 100vmax;
+  padding: 0.4em;
+}
+
+.options button:hover > svg {
+  color: var(--clr-primary);
+}

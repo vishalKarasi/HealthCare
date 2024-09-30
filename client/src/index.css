@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: transparent;
+  border: transparent;
+}
+
+header,
+footer,
+button {
+  user-select: none;
+}
+
+body,
+input,
+textarea {
+  font: var(--font-body);
+  background-color: var(--clr-bg);
+}
+
+main,
+footer {
+  padding-inline: 8dvw;
+  padding-block: 2em;
+}
+
+main {
+  min-height: calc(100dvh - 5.5em);
+}
+
+section {
+  padding-block: 1.5em;
+}
+
+h1 {
+  font: var(--font-head);
+  color: var(--clr-primary);
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+h2 {
+  font: var(--font-sub-head);
+  color: var(--clr-secondary);
+  text-align: center;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+svg {
+  color: var(--clr-font);
+  width: 2em;
+  height: 2em;
+}
+
+li {
+  list-style-type: none;
+}
+
+a,
+button {
+  text-decoration: none;
+  color: var(--clr-font);
+  font: var(--font-link);
+}
+
+button {
+  all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a,
+svg,
+span,
+img,
+button {
+  cursor: pointer;
+  transition: scale 0.4s ease-in-out;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em;
+  border-radius: 1em;
+  background-color: var(--clr-box);
+}
+
+input,
+textarea {
+  min-width: 35ch;
+  padding: 0.75em;
+  border-radius: 0.25em;
+}
+:is(input, textarea):not(.searchBar > input):focus {
+  box-shadow: 0 0 0.5em var(--clr-secondary);
+}
+
+textarea {
+  min-height: 6em;
+  resize: vertical;
+}
+
+/* ---------- NAVBAR ----------*/
+nav {
+  display: flex;
+  gap: 2.5em;
+}
+
+nav a {
+  padding-block: 0.2em;
+  border-radius: 0.4em;
+}
+
+nav a.active {
+  border-bottom: 0.25em solid var(--clr-primary);
+}
+
+nav a:not(.active):hover {
+  scale: 1.1;
+  color: var(--clr-primary);
+}
+
+/* ---------- ANIMATION ----------*/
+@keyframes sliderIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+header,
+main,
+section,
+footer {
+  animation: sliderIn 0.75s ease-in-out;
+}
+
+h1,
+h2,
+button,
+img,
+article {
+  animation: scaleIn 1.5s ease-in-out;
+}

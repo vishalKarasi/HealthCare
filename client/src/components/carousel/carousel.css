@@ -1,0 +1,10 @@
+.swiper {
+  .swiper-wrapper {
+    .swiper-slide {
+      width: 340px;
+      height: auto;
+      margin: 1em;
+    }
+  }
+  margin-block: 1em;
+}
