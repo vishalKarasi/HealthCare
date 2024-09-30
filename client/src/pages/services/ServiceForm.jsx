@@ -39,7 +39,7 @@ function ServiceForm() {
         <span
           className="btnClose"
           onClick={() => {
-            setIsEdit;
+            setIsEdit(false);
             setSelectedService({ name: "", price: "", description: "" });
             setForm(false);
           }}
